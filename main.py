@@ -35,7 +35,7 @@ def print_hi(name):
                         cv2.circle(img,(cx,cy),5,(255,0,255),cv2.FILLED)
                         if cx - (handLms.landmark[8].x * w) >60 and cx - (handLms.landmark[16].x * w) > 60:
                             if time.time() - cooldown >3:
-                                alert(no_of_fucks)
+                                alert(no_of_fucks+1)
                                 no_of_fucks+=1
                                 cooldown = time.time()
                             # else:print("time short")
@@ -49,7 +49,7 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    # print_hi('PyCharm')
-    alert(1)
+    print_hi('PyCharm')
+    # alert(1)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
